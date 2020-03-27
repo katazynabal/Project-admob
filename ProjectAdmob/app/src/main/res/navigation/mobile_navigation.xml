@@ -9,17 +9,35 @@
         android:id="@+id/navigation_home"
         android:name="com.example.projectadmob.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/goTo_programs"
+            app:destination="@id/program_frag" />
+        <action
+            android:id="@+id/goTo_exams"
+            app:destination="@id/exam_frag" />
+        <action
+            android:id="@+id/goTo_tricks"
+            app:destination="@id/trick_frag" />
+        <action
+            android:id="@+id/goTo_challenges"
+            app:destination="@id/challenge_frag" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.projectadmob.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
+        android:id="@+id/program_frag"
+        android:name="com.example.projectadmob.ui.programs.ProgramsFragment"
+        tools:layout="@layout/fragment_programs"/>
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.projectadmob.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/exam_frag"
+        android:name="com.example.projectadmob.ui.exam.ExamTemplateFragment"
+        tools:layout="@layout/fragment_programs"/>
+    <fragment
+        android:id="@+id/challenge_frag"
+        android:name="com.example.projectadmob.ui.challenges.ChallengeTemplateFragment"
+        tools:layout="@layout/fragment_programs"/>
+    <fragment
+        android:id="@+id/trick_frag"
+        android:name="com.example.projectadmob.ui.tricks.TricksFragment"
+        tools:layout="@layout/fragment_programs"/>
 </navigation>
