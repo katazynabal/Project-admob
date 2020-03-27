@@ -19,8 +19,8 @@
         </activity>
 
         <meta-data
-            android:name="com.google.android.gms.ads.com.example.projectadmob"
-            android:value="ca-app-pub-3487316964923013~1867650985"/>
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ad_mob_id"/>
     </application>
 
 </manifest>
