@@ -22,6 +22,6 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        MobileAds.initialize(this, resources.getString(R.string.ad_mob_id))
+        MobileAds.initialize(this, "ca-app-pub-3487316964923013~1867650985")
     }
 }

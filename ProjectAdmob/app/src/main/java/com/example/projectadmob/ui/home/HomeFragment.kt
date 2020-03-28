@@ -44,7 +44,7 @@ class HomeFragment : Fragment() {
         mInterstitialAd.loadAd(AdRequest.Builder().build())
         mInterstitialAd.adListener = object : AdListener() {
             override fun onAdLoaded() {
-                mInterstitialAd.show()
+                //mInterstitialAd.show()
             }
 
             override fun onAdFailedToLoad(errorCode: Int) {

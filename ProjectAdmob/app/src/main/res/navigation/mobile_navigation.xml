@@ -18,7 +18,7 @@
             app:destination="@id/exam_frag" />
         <action
             android:id="@+id/goTo_tricks"
-            app:destination="@id/trick_frag" />
+            app:destination="@id/trick_navigation" />
         <action
             android:id="@+id/goTo_challenges"
             app:destination="@id/challenge_frag" />
@@ -36,8 +36,54 @@
         android:id="@+id/challenge_frag"
         android:name="com.example.projectadmob.ui.challenges.ChallengeTemplateFragment"
         tools:layout="@layout/fragment_programs"/>
-    <fragment
-        android:id="@+id/trick_frag"
-        android:name="com.example.projectadmob.ui.tricks.TricksFragment"
-        tools:layout="@layout/fragment_programs"/>
+    <navigation
+        android:id="@+id/trick_navigation"
+        app:startDestination="@id/trick_frag" >
+        <fragment
+            android:id="@+id/trick_frag"
+            android:name="com.example.projectadmob.ui.tricks.TrickScenariosFragment"
+            tools:layout="@layout/fragment_tricks" >
+            <action
+                android:id="@+id/goTo_bannerTricksFragment"
+                app:destination="@id/tricksFragment2" />
+            <action
+                android:id="@+id/goTo_rewardTricksFragment"
+                app:destination="@id/tricksFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/bannerTricksFragment"
+            android:name="com.example.projectadmob.ui.tricks.banner.BannerTricksFragment"
+            android:label="BannerTricksFragment"
+            tools:layout="@layout/fragment_trick_template" />
+
+        <fragment
+            android:id="@+id/rewardTricksFragment"
+            android:name="com.example.projectadmob.ui.tricks.reward.RewardTricksFragment"
+            android:label="RewardTricksFragment"
+            tools:layout="@layout/fragment_trick_template" />
+        <fragment
+            android:id="@+id/tricksFragment"
+            android:name="com.example.projectadmob.ui.tricks.TricksFragment"
+            android:label="TricksFragment" >
+            <action
+                android:id="@+id/goTo_Next"
+                app:destination="@id/rewardTricksFragment" />
+            <argument
+                android:name="isReward"
+                app:argType="boolean"
+                android:defaultValue="false" />
+        </fragment>
+        <fragment
+            android:id="@+id/tricksFragment2"
+            android:name="com.example.projectadmob.ui.tricks.TricksFragment"
+            android:label="TricksFragment" >
+            <action
+                android:id="@+id/goTo_Next"
+                app:destination="@id/bannerTricksFragment" />
+            <argument
+                android:name="isReward"
+                app:argType="boolean"
+                android:defaultValue="false" />
+        </fragment>
+    </navigation>
 </navigation>

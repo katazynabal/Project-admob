@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary">#F5E365</color>
+    <color name="secondary">#40DB9E</color>
+    <color name="secondaryTransparent">#4040DB9E</color>
+    <color name ="lightGreen">#47e8ab</color>
+    <color name="konfettiBackground">#abfddd</color>
+    <color name="konfetti1">#FEEE94</color>
+    <color name="konfetti2">#F5E365</color>
+    <color name="warning">#FC6A64</color>
+    <color name="brown">#602D22</color>
+    <color name="lightBrown">#8E7F46</color>
+    <color name="darkGreen">#1B5D3A</color>
+    <color name="darkesterGray">#9937453f</color>
+    <color name="darkestGray">#de37453f</color>
+    <color name="darkGray">#4C5D56</color>
+    <color name="gray">#839490</color>
+    <color name="lightGray">#E3E3E3</color>
+    <color name="lightestGray">#f9f9f9</color>
+    <color name="welcome_screen">#17DB8E</color>
+    <color name="barkBoxBlue">#3cb0e4</color>
+    <color name="icon_gray">#8a000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="opaque_black">#99000000</color>
+    <color name="light_blue">#eff9f5</color>
+    <color name="transparent">#00000000</color>
+    <color name="button_outline_gray">#1e73978f</color>
+    <color name="button_dark_gray">#3f3f3f</color>
+    <color name="dark_gray_transparent">#33324641</color>
+    <color name="darkColdGreen">#de37453f</color>
+    <color name="lightBackgroundGreen">#e6f4ef</color>
+    <color name="lightGrayDisabledText">#bec4c3</color>
+    <color name="clicker_red">#ff6b65</color>
+    <color name="survey_button_background">#eeeeee</color>
+    <color name="survey_button_text">#4c5d56</color>
 </resources>
